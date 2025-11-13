@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 5px 4px rgba(0,0,0,0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-item {
+            padding: 0.5rem 1rem;
+        }
+        
+        .nav-item:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        
+        .nav-link {
+            font-weight: 700;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .intro {
+            display: flex;
+            background: #e74c3c;
+            color: #efefef;
+            padding: 1.5rem;
+            border-radius: 8px;
+            justify-content: center;
+        }
+        
+        .intro h1 {
+            font-size: 2rem;
+        }
+
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .news-item {
+            display: flex;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .news-thumb {
+            flex: 0 0 320px;
+            height: auto;
+            width:300px;
+            background-color: #ffffff;
+            margin: 1rem;
+        }
+        
+        .news-content {
+            flex: 1;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .news-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .news-text {
+            color: #666;
+            font-size: 1.15rem;
+        }
+        
+        .news-date {
+            font-size: 0.8rem;
+            color: #999;
+            align-self: flex-end;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar-logo">
+            <a href="index.html">MovieBlog</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="popular.html">Populars</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="upcoming.html">Upcoming</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="suggestions.html">Suggestions</a></li>
+            <li class="nav-item"><a class="nav-link" href="awards.html">Award Winnigs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h1>Movie News</h1>
+        </section>
+
+        <section class="news-list">
+            <div class="news-item">
+                <div class="news-thumb">
+                    <img src="/Pictures/starwars.jpg" alt="thumbnail">
+                </div>
+                <div class="news-content">
+                    <div class="news-title">New Trailer for the new starwar movie.</div>
+                    <div class="news-text">Who doesn't like starwars?</div>
+                    <div class="news-date">Nov 13, 2025</div>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-thumb">
+                    <img src="/Pictures/Oscar.jpg" alt="thumbnail">
+                </div>
+                <div class="news-content">
+                    <div class="news-title">Oscars 2026 Nominations leaked</div>
+                    <div class="news-text">See who's on the list.</div>
+                    <div class="news-date">Nov 13, 2025</div>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-thumb">
+                    <img src="/Pictures/Luka-vs-Mavs.jpg" alt="thumbnail">
+                </div>
+                <div class="news-content">
+                    <div class="news-title">Laker fans are making a movie for Nico Harrison called "Thank you Niko!"</div>
+                    <div class="news-text">Seriously, thank you Nico!</div>
+                    <div class="news-date">Nov 13, 2025</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Get your snacks and drinks ready and enjoy watching.</p>
+    </footer>
+    
+</body>
+</html>

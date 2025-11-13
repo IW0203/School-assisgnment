@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Award winnings</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-item:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .nav-link {
+            font-weight: 700;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            background: #e74c3c;
+            color: #efefef;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+        }
+
+        .Awards-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .Award-item {
+            display: flex;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-poster {
+            flex: 0 0 300px;
+            height: auto;
+            background-color: #d8d8d8;
+            justify-content: center;
+        }
+
+        .item-poster img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .item-info {
+            flex: 1;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .award-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding-left: 10px;
+            margin-bottom: 0.5rem;
+            width: 200px;
+            background-color: #ff8a7d;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .winner-info {
+            padding-left: 3px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .overview {
+            flex-wrap: wrap
+        }
+
+        .item-details {
+            display: flex;
+            gap: 3rem;
+        }
+
+        .item-overview {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-logo">
+            <a href="index.html">MovieBlog</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="popular.html">Populars</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="upcoming.html">Upcoming</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="suggestions.html">Suggestions</a></li>
+            <li class="nav-item"><a class="nav-link" href="awards.html">Award Winnigs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h1>2025 Oscars Awards Winners</h1>
+            <p>They say these are the best of this year, so maybe try them out?</p>
+        </section>
+
+        <section class="Awards-list">
+            <div class="Award-item">
+                <div class="item-poster">
+                    <img src="/Pictures/Anora.jpg" alt="thumbnail">
+                </div>
+                <div class="item-info">
+                    <div class="award-title">Best Picture</div>
+                    <div class="winner-info">Anora</div>
+                    <div class="overview">
+                        Anora, a young woman from Brooklyn, gets her chance at a Cinderella story when she meets and
+                        marries the son of an oligarch. Once the news reaches Russia, her fairytale is threatened as the
+                        parents set out for New York to get the marriage annulled.
+                    </div>
+                </div>
+            </div>
+            <div class="Award-item">
+                <div class="item-poster">
+                    <img src="/Pictures/Sean-Baker.jpg" alt="thumbnail">
+                </div>
+                <div class="item-info">
+                    <div class="award-title">Best Director</div>
+                    <div class="winner-info">Sean Baker - Anora</div>
+                    <div class="overview">
+                        Sean Baker is an American filmmaker. He is a director, writer, editor, and producer of
+                        independent narrative feature films which are most often about the lives of marginalized people,
+                        especially immigrants and sex workers.
+                    </div>
+                </div>
+            </div>
+            <div class="Award-item">
+                <div class="item-poster">
+                    <img src="/Pictures/Mikey Madison.jpg" alt="thumbnail">
+                </div>
+                <div class="item-info">
+                    <div class="award-title">Best Actress</div>
+                    <div class="winner-info">
+                        Mikey Madison - Anora</div>
+                    <div class="overview">
+                        Mikaela Madison Rosberg is an American actress. She began her career acting in short films and received recognition for her role as a sullen teenager in the FX comedy series Better Things.
+                    </div>
+                </div>
+            </div>
+            <div class="Award-item">
+                <div class="item-poster">
+                    <img src="/Pictures/adrien brody.jpg" alt="thumbnail">
+                </div>
+                <div class="item-info">
+                    <div class="award-title">Best Actor</div>
+                    <div class="winner-info">Adrien Brody - The Brutalist</div>
+                    <div class="overview">
+                        Adrien Nicholas Brody is an American actor. His accolades include two Academy Awards, a British Academy Film Award and a Golden Globe Award, in addition to nominations for three Primetime Emmy Awards and a Laurence Olivier Award. In 2025, Time magazine listed him as one of the world's 100 most influential people. 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Get your snacks and drinks ready and enjoy watching.</p>
+    </footer>
+
+</body>
+
+</html>

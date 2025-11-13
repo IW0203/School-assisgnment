@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 5px 4px rgba(0,0,0,0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-item {
+            padding: 0.5rem 1rem;
+        }
+        
+        .nav-item:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        
+        .nav-link {
+            font-weight: 700;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            background: #e74c3c;
+            color: #efefef;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .intro h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .intro p {
+            font-size: 1.1rem;
+        }
+
+        .categories-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        
+        .category-card {
+            flex: 1 1 200px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.2s;
+        }
+        
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .category-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #e74c3c;
+        }
+        
+        .category-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .explore {
+            color: #0f0707;
+            font-weight: 700;
+            border: 1px solid #850505;
+            padding: 0.2rem 1rem 0.2rem 1rem;
+            border-radius: 8px;
+            width: fit-content;
+            height: fit-content;
+            margin-top: 50px;
+            margin-left: auto;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar-logo">
+            <a href="index.html">MovieBlog</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="popular.html">Populars</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="upcoming.html">Upcoming</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="suggestions.html">Suggestions</a></li>
+            <li class="nav-item"><a class="nav-link" href="awards.html">Award Winnigs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h1>Browse by Categories</h1>
+            <p>Find your next favorite film.</p>
+        </section>
+
+        <section class="categories-grid">
+            <div class="category-card">
+                <div class="category-title">Action</div>
+                <div class="category-description">Thrills and adventures.</div>
+                <a class="explore" href="action.html">Explore</a>
+            </div>
+            <div class="category-card">
+                <div class="category-title">Animation</div>
+                <div class="category-description">Worlds full of wonder.</div>
+                <a class="explore" href="animation.html">Explore</a>
+            </div>
+            <div class="category-card">
+                <div class="category-title">Documentaries</div>
+                <div class="category-description">Explore what inspires.</div>
+                <a class="explore" href="documentaries.html">Explore</a>
+            </div>
+            <div class="category-card">
+                <div class="category-title">Horror</div>
+                <div class="category-description">Don't watch alone.</div>
+                <a class="explore" href="horror.html">Explore</a>
+            </div>
+            <div class="category-card">
+                <div class="category-title">Romance</div>
+                <div class="category-description">Love speaks fot itself.</div>
+                <a class="explore" href="romance.html">Explore</a>
+            </div>
+            <div class="category-card">
+                <div class="category-title">Sci-Fi</div>
+                <div class="category-description">Imagination is the ultimate romance</div>
+                <a class="explore" href="sci-fi.html">Explore</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Get your snacks and drinks ready and enjoy watching.</p>
+    </footer>
+    
+</body>
+</html>

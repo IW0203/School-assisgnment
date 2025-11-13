@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supernatrual-review</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-item:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .nav-link {
+            font-weight: 700;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .review-hero {
+            display: flex;
+            flex-direction: column;
+            background: #e74c3c;
+            color: #efefef;
+            padding: 2rem;
+            border-radius: 8px;
+            gap: 1rem;
+        }
+
+        .hero-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+
+        .hero-rating {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .overview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .overview-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .initial {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .hero-poster {
+            align-self: left;
+            width: 500px;
+            height: auto;
+            background-color: #e74c3c;
+            border-radius: 10px;
+        }
+
+        .review-content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .author-info {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .review-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .review-rating {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            color: #999;
+            border-top: 2px solid #eee;
+            padding-top: 2rem;
+        }
+
+        .back-link {
+            align-self: flex-start;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-logo">
+            <a href="index.html">MovieBlog</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/popular.html">Populars</a></li>
+            <li class="nav-item"><a class="nav-link" href="/categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="/upcoming.html">Upcoming</a></li>
+            <li class="nav-item"><a class="nav-link" href="/news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="/reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="/suggestions.html">Suggestions</a></li>
+            <li class="nav-item"><a class="nav-link" href="/awards.html">Award Winnigs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <a href="/Reviews.html" class="back-link">← Back to Reviews</a>
+
+        <section class="review-hero">
+            <div class="hero-header">
+                <div class="hero-title">How I Met Your Mother</div>
+                <div class="hero-rating">9.5/10</div>
+            </div>
+            <div class="overview">
+                <div class="hero-poster">
+                    <img src="/Pictures/how i met your mother.jpg" alt="how i met your mother poster"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="overview-text">
+                    <p><span class="initial">H</span>
+                        ow I Met Your Mother is an American sitcom created by Carter Bays and Craig Thomas,
+                        produced by 20th Century Fox Television. Premiering on CBS in 2005, the series ran for nine
+                        seasons and 208 episodes. Told through an extended flashback, it follows Ted Mosby recounting to
+                        his children the long and winding story of how he met their mother. Alongside his close friends
+                        Marshall, Lily, Robin, and the legendary Barney Stinson, the show explores love, friendship, and
+                        the chaos of growing up in New York City. Known for its nonlinear storytelling, recurring gags,
+                        and emotional resonance, it became one of the most iconic sitcoms of its era.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="review-content">
+            <div class="review-author">
+                <div class="author-avatar"
+                    style="width: 40px; height: 40px; background-color: #d8d8d8; border-radius: 50%;"></div>
+                <div class="author-info">
+                    <div>By Made-up-Fan123</div>
+                    <div>Posted on November 13, 2025</div>
+                </div>
+            </div>
+            <div class="review-text">
+                <p><em>How I Met Your Mother</em> masterfully blends humor and heart, standing as a modern classic in
+                    television comedy. As both a romantic journey and a meditation on timing and fate, it captures the
+                    uncertainty of young adulthood with wit and sincerity. The cast’s chemistry—especially Neil Patrick
+                    Harris’s unforgettable Barney—elevates even its silliest moments. While the final season divided
+                    fans, the series as a whole remains a heartfelt ode to friendship and the messy beauty of life’s
+                    detours. It’s funny, flawed, and deeply human—much like growing up itself.</p>
+                </p>
+                <div class="review-rating">
+                    <span>Rating: 9/10</span>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Get your snacks and drinks ready and enjoy watching.</p>
+    </footer>
+</body>
+
+</html>

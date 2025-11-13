@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Populars</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-item:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .nav-link {
+            font-weight: 700;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            background: #e74c3c;
+            color: #efefef;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+        }
+
+        .populars-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .list-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-left: 1rem;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .popular-item {
+            display: flex;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-poster {
+            flex: 0 0 300px;
+            height: auto;
+            background-color: #d8d8d8;
+            justify-content: center;
+        }
+
+        .item-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item-info {
+            flex: 1;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .review.button {
+            color: #0f0707;
+            font-weight: 700;
+            border: 1px solid #850505;
+            padding: 0.2rem;
+            border-radius: 8px;
+            width: fit-content;
+            height: fit-content;
+            margin-top: auto;
+            margin-left: auto;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .overview {
+            flex-wrap: wrap
+        }
+
+        .item-details {
+            display: flex;
+            gap: 3rem;
+        }
+
+        .item-overview {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 1, 1rem;
+            color: #666;
+            margin-bottom: 35px;
+            margin-top: 25px;
+        }
+
+        .item-details {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-logo">
+            <a href="index.html">MovieBlog</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="popular.html">Populars</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="upcoming.html">Upcoming</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="suggestions.html">Suggestions</a></li>
+            <li class="nav-item"><a class="nav-link" href="awards.html">Award Winnigs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h1>Recently Popular Films</h1>
+            <p>Discover the hottest movies and TV shows trending right now.</p>
+        </section>
+
+        <section class="populars-list">
+            <div class="list-title">Trending</div>
+            <div class="popular-item">
+                <div class="item-poster">
+                    <img src="/Pictures/Cyberpunk.jpg" alt="thumbnail">
+                </div>
+                <div class="item-info">
+                    <div class="item-title">Cyberpunk: Edgerunners</div>
+                    <div class="item-overview">
+                        A street kid tries to survive in a technology and body modification-obsessed
+                        city of the future.
+                    </div>
+                    <div class="item-details">
+                        <span>2022</span>
+                        <span>Sci-Fi, Adventure, Anime</span>
+                    </div>
+                    <a class="review button" href="/Reviews/Cyberpunk-Edgerunners.html">Read Reviews</a>
+                </div>
+            </div>
+            <div class="popular-item">
+                <div class="item-poster">
+                    <img src="/Pictures/revenge of the sith thumbnail.jpg" alt="thumbnail">
+                </div>
+                <div class="item-info">
+                    <div class="item-title">revenge of the sith</div>
+                    <div class="item-overview">
+                        Anakin joins forces with Obi-Wan and sets Palpatine free from the evil
+                        clutches of Count Doku. However, he falls prey to Palpatine and the Jedis' mind games and
+                        gives into temptation.
+                    </div>
+                    <div class="item-details">
+                        <span>2005</span>
+                        <span>Action, Epic, Sci-fi</span>
+                    </div>
+                    <a class="review button" href="/Reviews/revenge-of-the-sith.html">Read Reviews</a>
+                </div>
+            </div>
+            </div>
+            <div class="popular-item">
+                <div class="item-poster">
+                    <img src="/Pictures/how i met your mother.jpg" alt="thumbnail">
+                </div>
+                <div class="item-info">
+                    <div class="item-title">how i met your mother</div>
+                    <div class="item-overview">
+                        Ted Mosby, an architect, recounts to his children the events that led him to
+                        meet their mother. His journey is made more eventful by the presence of his friends Lily,
+                        Marshall, Robin and Barney.
+                    </div>
+                    <div class="item-details">
+                        <span>2014</span>
+                        <span>Sitcom, Romance</span>
+                    </div>
+                    <a class="review button" href="/Reviews/How I Met Your Mother.html">Read Reviews</a>
+                </div>
+            </div>
+            <div class="popular-item">
+                <div class="item-poster">
+                    <img src="/Pictures/Black mirror.jpg" alt="thumbnail">
+                </div>
+                <div class="item-info">
+                    <div class="item-title">Black mirror</div>
+                    <div class="item-overview">In an abstrusely dystopian future, several individuals grapple with the
+                        manipulative effects of cutting edge technology in their personal lives and behaviours.
+                    </div>
+                    <div class="item-details">
+                        <span>2011</span>
+                        <span>Speculative fiction</span>
+                    </div>
+                    <a class="review button" href="/Reviews/Black miror.html">Read Reviews</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Get your snacks and drinks ready and enjoy watching.</p>
+    </footer>
+
+</body>
+
+</html>
