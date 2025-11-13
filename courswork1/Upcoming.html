@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-item:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .nav-link {
+            font-weight: 700;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            background: #e74c3c;
+            color: #efefef;
+            padding: 2rem;
+            border-radius: 8px;
+            align-items: center;
+        }
+
+        .intro h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .upcoming-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: space-around;
+        }
+
+        .upcoming-card {
+            flex: 0 1 300px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .upcoming-date {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .upcoming-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .upcoming-description {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-logo">
+            <a href="index.html">MovieBlog</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="popular.html">Populars</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="upcoming.html">Upcoming</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="suggestions.html">Suggestions</a></li>
+            <li class="nav-item"><a class="nav-link" href="awards.html">Award Winnigs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h1>Upcoming Releases</h1>
+            <p>GET READY!</p>
+        </section>
+
+        <section class="upcoming-grid">
+            <div class="upcoming-card">
+                <div class="upcoming-date">Not in this century</div>
+                <div class="upcoming-title">The Elder Scrolls: 6</div>
+                <div class="upcoming-description">Bethesda, Please hurry up.</div>
+            </div>
+            <div class="upcoming-card">
+                <div class="upcoming-date">Jan 2026 (hopefully)</div>
+                <div class="upcoming-title">Cyberpunk: Edgerunners season 2</div>
+                <div class="upcoming-description">I want David back!!!</div>
+            </div>
+            <div class="upcoming-card">
+                <div class="upcoming-date">Feb 2026</div>
+                <div class="upcoming-title">The Matrix 5</div>
+                <div class="upcoming-description">If this is real, that means I'm a NPC in a simulated world.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Get your snacks and drinks ready and enjoy watching.</p>
+    </footer>
+
+</body>
+</html>

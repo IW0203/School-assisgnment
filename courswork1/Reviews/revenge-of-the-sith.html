@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supernatrual-review</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-item:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .nav-link {
+            font-weight: 700;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .review-hero {
+            display: flex;
+            flex-direction: column;
+            background: #e74c3c;
+            color: #efefef;
+            padding: 2rem;
+            border-radius: 8px;
+            gap: 1rem;
+        }
+
+        .hero-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+
+        .hero-rating {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .overview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .overview-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .initial {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .hero-poster {
+            align-self: left;
+            width: 500px;
+            height: auto;
+            background-color: #e74c3c;
+            border-radius: 10px;
+        }
+
+        .review-content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .author-info {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .review-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .review-rating {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            color: #999;
+            border-top: 2px solid #eee;
+            padding-top: 2rem;
+        }
+
+        .back-link {
+            align-self: flex-start;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-logo">
+            <a href="index.html">MovieBlog</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/popular.html">Populars</a></li>
+            <li class="nav-item"><a class="nav-link" href="/categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="/upcoming.html">Upcoming</a></li>
+            <li class="nav-item"><a class="nav-link" href="/news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="/reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="/suggestions.html">Suggestions</a></li>
+            <li class="nav-item"><a class="nav-link" href="/awards.html">Award Winnigs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <a href="/Reviews.html" class="back-link">← Back to Reviews</a>
+
+        <section class="review-hero">
+            <div class="hero-header">
+                <div class="hero-title">Starwars: Revenge of the sith</div>
+                <div class="hero-rating">9.5/10</div>
+            </div>
+            <div class="overview">
+                <div class="hero-poster">
+                    <img src="/Pictures/revenge of the sith thumbnail.jpg" alt="revenge of the sith"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="overview-text">
+                    <p><span class="initial">S</span>
+                    tar Wars: Episode III – Revenge of the Sith</em> is a 2005 American epic space opera film
+                        written and directed by George Lucas, produced by Lucasfilm and distributed by 20th Century Fox.
+                        Serving as the final installment of the prequel trilogy and the bridge to the original saga, it
+                        marks the tragic transformation of Anakin Skywalker into the infamous Darth Vader. The film
+                        stars Hayden Christensen, Ewan McGregor, Natalie Portman, Ian McDiarmid, and Samuel L. Jackson,
+                        with John Williams once again composing the score.</p>
+                    <p>Set three years after the onset of the Clone Wars, the story follows Jedi Knight Anakin Skywalker
+                        as he struggles with loyalty, love, and the lure of forbidden power. Manipulated by Chancellor
+                        Palpatine—secretly the Sith Lord Darth Sidious—Anakin’s fall leads to the destruction of the
+                        Jedi Order and the rise of the Galactic Empire. His mentor and friend, Obi-Wan Kenobi, is left
+                        to face him in a final, heartbreaking duel that seals both their fates.</p>
+                    <p>Visually stunning and thematically darker than its predecessors, <em>Revenge of the Sith</em>
+                        blends political intrigue, moral tragedy, and operatic spectacle. It explores corruption, fear,
+                        and the fragility of ideals in the face of ambition. With its sweeping action sequences,
+                        emotional depth, and haunting score, the film not only concludes the prequel trilogy but also
+                        solidifies its place as one of the most impactful chapters in the <em>Star Wars</em> saga.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="review-content">
+            <div class="review-author">
+                <div class="author-avatar"
+                    style="width: 40px; height: 40px; background-color: #d8d8d8; border-radius: 50%;"></div>
+                <div class="author-info">
+                    <div>By Made-up-Fan456</div>
+                    <div>Posted on November 12, 2025</div>
+                </div>
+            </div>
+            <div class="review-text">
+                <p><em>Star Wars: Episode III – Revenge of the Sith</em> stands as both a tragic masterpiece and the
+                    emotional apex of George Lucas’s prequel trilogy. For those of us who grew up watching the rise and
+                    fall of Anakin Skywalker, this film was not just a spectacle—it was a heartbreak we saw coming yet
+                    couldn’t look away from.</p>
+                <p>Lucas delivers his most mature and cohesive work here, blending operatic grandeur with political
+                    decay and personal tragedy. Hayden Christensen finally steps into full command of Anakin, portraying
+                    his descent with raw vulnerability and restrained rage. Opposite him, Ewan McGregor gives a
+                    career-defining performance as Obi-Wan Kenobi—haunted, compassionate, and devastatingly human. Their
+                    final duel on Mustafar is not just a visual triumph but an emotional one, a shattering culmination
+                    of brotherhood turned to ruin.</p>
+                <p>From a technical standpoint, <em>Revenge of the Sith</em> is visually breathtaking. The choreography
+                    is kinetic yet precise, every lightsaber clash loaded with purpose. John Williams’s score,
+                    especially “Battle of the Heroes,” (英雄之战) amplifies the tragedy with operatic intensity, turning
+                    action into symphony. The film’s color palette—burning oranges and shadowed blues—mirrors the moral
+                    collapse unfolding on screen, making it one of the most visually expressive entries in the saga.</p>
+                <p>Beyond its spectacle, the film’s thematic core—power, corruption, and the seduction of fear—resonates
+                    deeply. It captures the quiet, almost inevitable transformation of democracy into tyranny, of hero
+                    into villain. Lucas doesn’t just tell a story of galactic downfall; he shows how love, loss, and
+                    manipulation can destroy even the purest intent.</p>
+                <p>As a longtime fan and critic, I recognize its flaws: the occasionally stiff dialogue, the uneven
+                    pacing. But none of that diminishes the raw emotional gravity it carries. When Obi-Wan whispers,
+                    “You were my brother, Anakin,” it’s not just the end of a film—it’s the collapse of an ideal.
+                    <em>Revenge of the Sith</em> remains a dark, operatic triumph—one that reminds us that even legends
+                    are born from tragedy.
+                </p>
+                <div class="review-rating">
+                    <span>Rating: 9/10</span>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Get your snacks and drinks ready and enjoy watching.</p>
+    </footer>
+</body>
+
+</html>
